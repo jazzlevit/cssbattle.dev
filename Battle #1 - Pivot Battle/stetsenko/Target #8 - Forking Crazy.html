@@ -1,0 +1,85 @@
+<div class="fork">
+    <div class="e1"></div>
+    <div class="e2"></div>
+    <div class="l e31"></div>
+    <div class="l e32"></div>
+    <div class="l e33"></div>
+    <div class="l e34"></div>
+    <div class="f f41"></div>
+    <div class="f f42"></div>
+    <div class="f f43"></div>
+</div>
+<style>
+    body {
+        background:#6592CF
+    }
+    div {
+        background:#060F55;
+    }
+    .fork {
+        position:relative;
+        margin:50 0 0 122;
+        width: 140;
+        height: 250;
+        background:#6592CF;
+    }
+    .e1{
+        position:absolute;
+        bottom:0;
+        left:60;
+        width:20;
+        height:60;
+    }
+    .e2{
+        position:absolute;
+        bottom:50;
+        left:0;
+        width:140;
+        height:100;
+        border-radius: 0 0 70px 70px
+    }
+    .l{
+        position:absolute;
+        height:90;
+        width:20;
+        top:10;
+    }
+    .l:after{
+        top:-10;
+        position:absolute;
+        content:'';
+        background:#060F55;
+        height:20;
+        width:20;
+        border-radius: 50%
+    }
+    .e31{
+        left:0;
+    }
+    .e32{
+        left:40;
+    }
+    .e33{
+        left:80;
+    }
+    .e34{
+        right:0;
+    }
+    .f{
+        position:absolute;
+        top:90;
+        background:#6592CF;
+        height:20;
+        width:20;
+        border-radius: 50%
+    }
+    .f41 {
+        left:20
+    }
+    .f42 {
+        left:60
+    }
+    .f43 {
+        left:100
+    }
+</style>
