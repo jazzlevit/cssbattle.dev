@@ -1,0 +1,42 @@
+<div class="wrap">
+    <div class="wrap__item wrap__item--left"></div>
+    <div class="wrap__item wrap__item--center"></div>
+    <div class="wrap__item wrap__item--right"></div>
+</div>
+
+<style>
+    body {
+        margin: 0;
+        background-color: #0B2429;
+    }
+
+    .wrap {
+        margin: auto;
+        margin-top: 200px;
+        position: relative;
+        max-width: 250px;
+        min-height: 150px;
+    }
+
+    .wrap__item {
+        position: absolute;
+        width: 100%;
+        max-width: 150px;
+        min-height: 150px;
+        border-radius: 90px 0
+    }
+
+    .wrap__item--left {
+        background-color: #1A4341;
+    }
+
+    .wrap__item--center {
+        right: 21%;
+        background-color: #998235;
+    }
+
+    .wrap__item--right {
+        right: 0;
+        background-color: #F3AC3C;
+    }
+</style>
