@@ -1,0 +1,73 @@
+<div class="wrap">
+    <div class="figure"></div>
+    <div class="blue"></div>
+    <div class="figure-right"></div>
+</div>
+
+<style>
+    body {
+        background-color: #6592CF;
+        margin: 0;
+    }
+
+    .wrap {
+        max-width: 300px;
+        min-height: 150px;
+        margin: 250px auto auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blue {
+        position: relative;
+        background-color: #243D83;
+        width: 150px;
+        height: 150px;
+        border-radius: 125px;
+    }
+
+    .blue::after {
+        position: absolute;
+        top: 33.3%;
+        left: 33.3%;
+        content: '';
+        background-color: #EEB850;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+
+    .figure,
+    .figure-right {
+        position: relative;
+        overflow: hidden;
+        background-color: #243D83;
+        width: 50px;
+        height: 150px;
+
+    }
+
+    .figure::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        background-color: #6592CF;
+    }
+
+    .figure-right::before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        right: 50%;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        background-color: #6592CF;
+    }
+</style>
